@@ -6,8 +6,8 @@ namespace Users
 {
     internal class Role
     {
-        string? Id;
-        string? Name;
+        public string? Id;
+        public string? Name;
 
         public Role(string _Id, string _Name)
         {

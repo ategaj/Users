@@ -6,15 +6,15 @@ namespace Users
 {
     internal class User
     {
-        string? Id;
-        string? Name;
-        string? Email;
-        string? Password;
-        string? Phone;
-        string? Date;
-        string? Role;
+        public int Id;
+        public string? Name;
+        public string? Email;
+        public string? Password;
+        public string? Phone;
+        public string? Date;
+        public Role? Role;
 
-        public User(string _Id, string _Name, string _Email, string _Password, string _Phone, string _Date, string _Role)
+        public User(int _Id, string _Name, string _Email, string _Password, string _Phone, string _Date, Role _Role)
         {
             Id = _Id;
             Name = _Name;
@@ -26,7 +26,7 @@ namespace Users
         }
         public override string ToString()
         {
-            return $"{Name} — {Phone} ({Email})";
+            return $"Id:{Id} role Id:{Role?.Id} | {Name} | Email {Email}";
         }
     }
 }
